@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MyProfle"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_profile"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="#fff"/>
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Jhone Shu"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jhone@redmail.com"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/txtnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="+91 9898989701"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noida"
+        android:background="#fff"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+</LinearLayout>

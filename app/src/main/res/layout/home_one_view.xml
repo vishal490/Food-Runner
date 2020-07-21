@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:id="@+id/llContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgResCover"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginLeft="5dp"
+                android:text="Name Of Book"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:text="Rs299"
+                android:textSize="20sp"
+                android:layout_below="@+id/txtName"
+                android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:id="@+id/txtbtfavorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_heart"
+                android:background="#fff"
+                />
+        <TextView
+            android:id="@+id/txtResRating"
+            android:layout_below="@+id/txtbtfavorites"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffca28"
+            android:text="4.5"
+            android:drawablePadding="4dp"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
